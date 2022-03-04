@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Michi Gifs</title>
+    <link rel="stylesheet" href="../sass/styles.css">
+    <link rel="icon" type="image/svg" href="../images/cat.svg">
 </head>
-<body>
+<body onload="loadAll()">
+<header>
+    <nav>
+        <a class="active" href="#"><img src="../images/cat.svg" alt="logo"></a>
+        <label>
+            <input type="text" placeholder="Search..">
+        </label>
+    </nav>
+</header>
 
+<main>
+    <h1 id="title"></h1>
+    <div id="content"></div>
+</main>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../javascript/script.js"></script>
 </body>
 </html>
