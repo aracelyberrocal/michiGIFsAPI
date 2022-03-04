@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class Michi {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int gif_id;
+    private long gif_id;
 
     @Column(name = "gif_name")
     private String gif_name;
